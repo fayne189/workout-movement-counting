@@ -14,11 +14,12 @@ def getArgs():
     '''
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--type', help='Is it train/valid/test video?')
-    parser.add_argument('--file', help='Path to video file')
+    parser.add_argument('-t','--type', help='Is it train/valid/test video?')
+    parser.add_argument('-f','--file', help='Path to video file')
     args = parser.parse_args()
 
     return args.type, args.file
+
 
 
 takeFrame = 5

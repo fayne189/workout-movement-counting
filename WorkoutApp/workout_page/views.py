@@ -1,4 +1,4 @@
-from django.shortcuts import render, render_to_response, redirect
+from django.shortcuts import render, redirect
 from django.http import HttpResponse,StreamingHttpResponse, HttpResponseServerError, JsonResponse
 from django.views.decorators import gzip
 import cv2
