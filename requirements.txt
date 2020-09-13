@@ -1,5 +1,5 @@
 torch
 torchvision
 numpy
-python-opencv
 django
+opencv-python
