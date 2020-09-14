@@ -122,6 +122,7 @@ class Utils:
         :param moves: current total number of moves
         :return:
         '''
+        print(self.isStream)
         output = cv2.resize(frame, (640, 480))
         font = cv2.FONT_HERSHEY_SIMPLEX
         bottomLeftCornerOfText = (20, 20)

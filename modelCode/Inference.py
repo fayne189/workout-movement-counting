@@ -129,7 +129,7 @@ class ExerciseCapture:
 
 
 if __name__ == '__main__':
-    ex = ExerciseCapture('model.pt', True, False, 10)
+    ex = ExerciseCapture('modelCode\model.pt', False, False, 10)
     moves, totalTime = ex.runPipeline()
     print(moves, totalTime)
 

@@ -95,7 +95,7 @@ class ExerciseCapture:
         Runs the counting pipeline for the concrete exercise
         :return:
         '''
-
+    
         t = threading.currentThread()
         self.origFrame, first_frame, prev_gray = self.utils.readFrame(cap, self.IM_SIZE)
 
