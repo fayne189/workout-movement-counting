@@ -7,7 +7,7 @@ import cv2
 step=10
 
 if __name__ == '__main__':
-    file = 'C:\\Users\\29433\\Videos\\p1.avi'
+    file = 'C:\\Users\\29433\\Videos\\s1.mp4'
     cam = cv2.VideoCapture(file)
     ret, prev = cam.read()
     prevgray = cv2.cvtColor(prev, cv2.COLOR_BGR2GRAY)
@@ -25,9 +25,9 @@ if __name__ == '__main__':
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         # 使用Gunnar Farneback算法计算密集光流
         if len(flow) == 0:
-            flow = cv2.calcOpticalFlowFarneback(prevgray, gray, None, 0.5, 3, 100, 3, 7, 1.1, 0)
+            flow = cv2.calcOpticalFlowFarneback(prevgray, gray, None, 0.5, 3, 50, 3, 7, 1.1, 0)
         else:
-            flow = cv2.calcOpticalFlowFarneback(prevgray, gray, flow, 0.5, 3, 100, 3, 7, 1.1, 0)
+            flow = cv2.calcOpticalFlowFarneback(prevgray, gray, flow, 0.5, 3, 50, 3, 7, 1.1, 0)
 
         # Computes the magnitude and angle of the 2D vectors
         magnitude, angle = cv2.cartToPolar(flow[..., 0], flow[..., 1])

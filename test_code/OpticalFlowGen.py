@@ -25,8 +25,8 @@ def getArgs():
 takeFrame = 5
 if __name__ == '__main__':
 
-    fileType, file = getArgs()
-
+    fileType = 'squat'
+    file = 'C://Users//29433//Videos//s1.mp4'
     folders = {'flow': f'OptFlow{fileType}/',
                'frames': f'Frames{fileType}/'}
 
